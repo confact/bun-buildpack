@@ -1,0 +1,24 @@
+#!/bin/bash -e
+
+set -e
+
+BUILD_DIR=$1
+CACHE_DIR=$2
+ENV_DIR=$3
+
+
+start "Installing Bun"
+  curl -fsSL https://bun.sh/install | bash
+finished
+
+# Build the project
+cd $BUILD_DIR
+
+start "Installing Dependencies"
+  bun install
+finished
+
+
+start "Compiling dependencies"
+  bun bun
+finished

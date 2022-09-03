@@ -1,0 +1,3 @@
+#!/bin/sh
+
+bun start -p \$PORT
