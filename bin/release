@@ -1,8 +1,9 @@
-#!/bin/sh
+#!/usr/bin/env bash
 
 cat << EOF
 ---
 addons:
+  []
 default_process_types:
-  bun: bun start -p \$PORT
+  web: bun start -p \$PORT
 EOF
