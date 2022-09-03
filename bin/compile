@@ -25,7 +25,7 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 cd $BUILD_DIR
 
 start "Installing Dependencies"
-  bun install
+  bun install --verbose
 finished
 
 
