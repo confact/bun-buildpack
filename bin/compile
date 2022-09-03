@@ -35,7 +35,6 @@ write_profile_d_script() {
 start "Installing Bun"
   curl -fsSL https://bun.sh/install | bash
 finished
-local BUN_INSTALL="$HOME/.bun"
 export BUN_INSTALL="$HOME/.bun" 
 export PATH="$BUN_INSTALL/bin:$PATH"
 write_profile_d_script
