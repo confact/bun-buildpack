@@ -24,11 +24,11 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 # Build the project
 cd $BUILD_DIR
 
-start "Installing Dependencies"
-  bun install --verbose
-finished
+# start "Installing Dependencies"
+#   bun install --verbose
+# finished
 
 
-start "Compiling dependencies"
-  bun bun
-finished
+# start "Compiling dependencies"
+#   bun bun
+# finished
