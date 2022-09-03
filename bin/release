@@ -1,3 +1,8 @@
 #!/bin/sh
 
-bun start -p \$PORT
+cat << EOF
+---
+addons:
+default_process_types:
+  bun: bun start -p \$PORT
+EOF
