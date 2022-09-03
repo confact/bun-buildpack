@@ -1,4 +1,6 @@
-#!/bin/bash
+#!/usr/bin/env bash
+
+set -e -o pipefail
 
 steptxt="----->"
 
@@ -26,7 +28,7 @@ write_profile_d_script() {
     mkdir -p $BUILD_DIR/.profile.d
     local profile_path="${BUILD_DIR}/.profile.d/bun_buildpack_paths.sh"
 
-    echo_profile_env_vars >> $profile_path
+    echo_export_env_vars >> $profile_path
   finished
 }
 
