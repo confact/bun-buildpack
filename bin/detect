@@ -1,6 +1,6 @@
 #!/bin/bash
 
-if [ -f $1/bun.lockb ]; then
+if [ -f $1/bunfig.toml ]; then
   echo "Bun"
   exit 0
 else
