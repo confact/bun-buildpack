@@ -45,3 +45,7 @@ cd $BUILD_DIR
 start "Installing Dependencies"
   bun install
 finished
+
+start "building the app"
+  bun run -b build
+finished
