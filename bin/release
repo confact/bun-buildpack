@@ -5,5 +5,5 @@ cat << EOF
 addons:
   []
 default_process_types:
-  web: bun start -p \$PORT
+  web: bun run -b start -p \$PORT
 EOF
